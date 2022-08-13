@@ -6,3 +6,4 @@ $(".menu-bar > ul").mouseenter(function(){
 $(".menu-bar").mouseleave(function(){
   $(".nav-box").removeClass("active");
 });
+
