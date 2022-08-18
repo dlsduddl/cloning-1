@@ -338,4 +338,96 @@ position:absolute;
   display: flex;
 }
 
+/* 섹션 2 */
+.section-2 {
+  width: 100%;
+  height: 395px;
+/*   background-color: gold; */
+}
+.event > a > h1 {
+  padding: 20px 10px;
+  color: #22241f;
+}
+
+/* 섹션2 슬라이드 */
+.section-2-2 input[id*="slide"] {
+  display:none;
+}
+.section-2-2 {
+  position:relative;
+}
+.section-2-2 .slidewrap {
+  max-width: 990px;
+  margin: 0 auto;
+  overflow:hidden;
+}
+.section-2-2 .slidelist {
+  white-space:nowrap;
+  font-size:0;
+}
+.section-2-2 .slidelist > li {
+  display: inline-block;
+  vertical-align:middle;
+  width: 100%;
+  transition: all ,1s;
+}
+.section-2-2 .slidelist > li > a > div > img {
+  width:310px;
+/*   margin-right:20px;
+  border-radius:10px; */
+}
+.section-2-2 .slidelist > li > a > div {
+    overflow:hidden;
+  border-radius:10px;
+  margin-right: 20px;
+}
+.section-2-2 .slidelist > li > a > div:hover > img {
+  transform:scale(1.1);
+  transition: transform ,0.5s;
+
+}
+
+
+.section-2-2 .slidelist label {
+  position:absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translatey(-50%);
+  padding:50px;
+  cursor: pointer;
+}
+.section-2-2 .slidelist .left {
+  left:-50px;
+  background:url('https://i.postimg.cc/KzHV5nyS/image.png') center center / 60% no-repeat;
+  opacity:70%;
+}
+.section-2-2 .slidelist .right {
+  right: -30px;
+  background:url('https://i.postimg.cc/XJ1MDRdP/image.png') center center / 60% no-repeat;
+  opacity:70%;
+}
+
+
+.section-2-2 [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(0%);
+}
+.section-2-2 [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(-100%);
+}
+.section-2-2 [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translatex(-200%);
+}
+
+.section-2-2 .slide-control [class*="control"] {
+  display:none;
+}
+.section-2-2 [id="slide01"]:checked ~ .slidewrap .control01 {
+  display: block;
+}
+.section-2-2 [id="slide02"]:checked ~ .slidewrap .control02 {
+  display: block;
+}
+.section-2-2 [id="slide03"]:checked ~ .slidewrap .control03 {
+  display: block;
+}
 
