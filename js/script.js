@@ -25,3 +25,14 @@ $(".section-3-content > div").mouseenter(function(){
   // => 첫째에 마우스를 올리면 같은 첫째를 불러온다!
   
 });
+
+// section 5-3 슬라이드
+function SliderBox1__init() {
+  let SliderBox1__i = 0;
+
+  setInterval(function() {
+    $('.slider-box-1').attr('data-index', ++SliderBox1__i % 2);
+  }, 3000);
+}
+
+SliderBox1__init();
